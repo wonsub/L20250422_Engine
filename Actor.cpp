@@ -23,8 +23,8 @@ void AActor::Tick()
 }
 void AActor::Render()
 {
-	//COORD Position = { Location.X, Location.Y };
-	COORD Position = { static_cast<SHORT>(Location.X), (SHORT)Location.Y };
+	COORD Position = { Location.X, Location.Y };
+	//COORD Position = { static_cast<SHORT>(Location.X), (SHORT)Location.Y };
 
 
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), Position);
